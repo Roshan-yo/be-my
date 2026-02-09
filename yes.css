@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(180deg, #1a1a1a, #0b0b0b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: white;
+}
+
+.wrapper {
+  text-align: center;
+  animation: pop 1.5s ease;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+}
+
+.hearts {
+  font-size: 28px;
+  margin-bottom: 25px;
+  animation: float 2s infinite alternate;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
